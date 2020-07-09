@@ -121,6 +121,18 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# 短信配置
+# 自己的id
+TENCENT_SMS_APP_ID = 66666666
+# 自己的key
+TENCENT_SMS_APP_KEY = "6666666666666666666"
+# 签名内容
+TENCENT_SMS_SIGN = "美丽科技生活"
+
+TENCENT_SMS_TEMPLATE = {
+    "register":657532,
+    "login":657528
+}
 # 短信模板
 SMS =0
 try:
